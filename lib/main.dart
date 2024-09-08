@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/login.dart';
+import 'package:myapp/register.dart';
 import 'package:myapp/newscreen.dart';
 
 void main() {
@@ -17,8 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/home': (context) => const MyHomePage(title: ' Demo Home Page1'),
         '/': (context) => const Screen2(title: ' Demo Home Page1'),
-        '/login': (context) => const Screen2(title: ' Demo Home Page1'),
-        '/register': (context) => const Screen2(title: ' Demo Home Page1'),
+        '/login': (context) => const Login(title: ' Demo Home Page1'),
+        '/register': (context) => const Register(title: ' Demo Home Page1'),
       },
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
