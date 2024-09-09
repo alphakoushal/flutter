@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/login.dart';
+import 'package:myapp/profile.dart';
 import 'package:myapp/register.dart';
 import 'package:myapp/newscreen.dart';
+import 'package:myapp/rest.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,9 +20,11 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/home': (context) => const MyHomePage(title: ' Demo Home Page1'),
-        '/': (context) => const Screen2(title: ' Demo Home Page1'),
+        '/s': (context) => const Restaurent(title: ' Demo Home Page1'),
+        '/': (context) => const ProfilePage(title: ' Demo Home Page1'),
         '/login': (context) => const Login(title: ' Demo Home Page1'),
         '/register': (context) => const Register(title: ' Demo Home Page1'),
+        '/rest': (context) => const Screen2(title: ' Demo Home Page1'),
       },
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
